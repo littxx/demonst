@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --bg-color: #080808;
@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   outline: none;
   scroll-behavior: smooth;
@@ -145,7 +145,9 @@ span {
 
 .home-img img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+  box-shadow:
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color),
     0 0 100px var(--main-color);
 }
 
@@ -271,7 +273,7 @@ span {
   position: relative;
 }
 .timeline-items::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 5px;
   height: 100%;
@@ -302,7 +304,9 @@ span {
   height: 21px;
   width: 21px;
   background-color: var(--main-color);
-  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+  box-shadow:
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
 
   position: absolute;
   left: calc(50% - 8px);
@@ -349,4 +353,61 @@ span {
 
 ::-webkit-scrollbar-track {
   background-color: black;
+}
+
+.services {
+  background: var(--bg-color);
+  color: black;
+}
+.services h2 {
+  color: white;
+  margin-bottom: 5rem;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.service-box {
+  height: 300px;
+  background-color: var(--main-color);
+
+  border-radius: 3rem;
+  border: 5px solid transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.service-box:hover {
+  transform: scale(1.03);
+  background: white;
+  color: black;
+}
+
+.service-box,
+.service-info {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  text-align: left;
+  max-height: 200px;
+  justify-content: left;
+  align-items: baseline;
+  padding: 1rem 2rem;
+}
+.service-info h4 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 2;
+}
+
+.service-info p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  max-height: 100px;
+  line-height: 1.6;
+  margin: auto;
 }
