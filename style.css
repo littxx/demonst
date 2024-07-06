@@ -415,3 +415,35 @@ span {
 .reviews {
   background: var(--second-bg-color);
 }
+
+.reviews-box {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reviews,
+.handing-review {
+  margin-bottom: 5rem;
+}
+
+.handing-review {
+  font-size: 7rem;
+}
+
+.reviews-box img {
+  width: 15rem;
+  border-radius: 50%;
+
+  box-shadow: 0 0 25px var(--main-color);
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
