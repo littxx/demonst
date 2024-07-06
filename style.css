@@ -411,3 +411,7 @@ span {
   line-height: 1.6;
   margin: auto;
 }
+
+.reviews {
+  background: var(--second-bg-color);
+}
